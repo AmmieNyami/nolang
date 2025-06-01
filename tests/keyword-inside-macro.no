@@ -1,0 +1,9 @@
+include "std.no"
+
+macro mac
+  here puts "\n" puts
+done
+
+func main
+  mac
+done

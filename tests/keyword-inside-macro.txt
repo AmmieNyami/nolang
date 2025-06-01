@@ -1,0 +1,3 @@
+stdout:::
+./tests//keyword-inside-macro.no:4:3
+stderr:::

@@ -1,0 +1,30 @@
+// nolang's core constants & macros
+
+// sizes
+const sizeof(u64) 8 end
+const sizeof(u32) 4 end
+const sizeof(u16) 2 end
+const sizeof(u8)  1 end
+
+const sizeof(ptr)  sizeof(u64) end
+const sizeof(bool) sizeof(u64) end
+const sizeof(int)  sizeof(u64) end
+
+const NULL 0 end
+
+// divisions
+macro /    divmod drop       done
+macro %    divmod swap drop  done
+macro mod  %                 done
+macro div  /                 done
+//macro imod idivmod swap drop done
+//macro idiv idivmod drop      done
+
+// increments
+macro inc64-by over @64 + swap  !64 done
+macro inc64    dup @64 1 + swap !64 done
+macro dec64    dup @64 1 - swap !64 done
+macro inc32    dup @32 1 + swap !32 done
+macro dec32    dup @32 1 - swap !32 done
+macro inc8     dup @8 1 + swap   !8 done
+macro dec8     dup @8 1 - swap   !8 done

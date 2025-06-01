@@ -1,0 +1,15 @@
+include "std.no"
+
+macro ,
+  @8
+done
+
+macro .
+  !8
+done
+
+func main
+  "sus" puts
+  69 mem .
+  mem , print
+done
